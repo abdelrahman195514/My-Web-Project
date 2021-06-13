@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Yamifood Restaurant</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="basic.css"> 
+    </head>
+    <body>
+        <header class="header">
+            <div class="container">
+                <div class="row justify-content-between align-items-center">
+                    <div class="logo">
+                        <a href="#"><img src="logo.png" alt="logo" width="34px" height="34px"></a>
+                    </div>
+                    <button type="button" class="nav-toggler">
+                        <span></span>
+                    </button>
+                    <nav class="nav">
+                        <ul>
+                            <li class="nav-item"><a href="index.html">home</a></li>
+                            <li class="nav-item"><a href="about us.html">about</a></li>
+                            <li class="nav-item"><a href="menu.html">menu</a></li>
+                            <li class="nav-item"><a href="team.html">team</a></li>
+                            <li class="nav-item"><a href="contact.html">contact us</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <footer class="footer" id="footer">
+            <div class="container" id="myDiv">
+                    <form id="myform"  onsubmit="return validation(event)"  autocomplete="on" >
+                        <div class="inputBox">
+                            <label>First Name:</label>
+                            <input name="fname" type="text" placeholder="First name" id="user" class="control" required>
+                            <label>Last Name:</label>
+                            <input name="lname" type="text" placeholder="last name" id="user2" class="control" required>
+                            <label>Email:</label>
+                            <input name="email" type="text" id="email" class="control" placeholder="email" required>
+                            <label>Mobile:</label>
+                            <input  name="number" type="text" id="mobile" class="control" placeholder="mobile phone number" pattern="[0-9]{11}" required>
+                            <label>Address:</label>
+                            <input name="adress" type="text" id="adress" class="adress" placeholder="adress" required>
+                            <label>Password:</label>
+                            <input  name="password"type="password" id ="pass" class="control" placeholder="password" required>
+                            <label>Confirm Password:</label>
+                            <input name="passward" type="password" placeholder="confirm passward" id="conpass" class="control" >
+                            <label>Gender:</label>
+                            <input type="radio">
+                            <label>Male</label>
+                            <input type="radio">
+                            <label>Female</label>
+                            <input type="submit" value="order now" class="btn" id="submit" >
+                    </div>
+                </form>
+            </div>
+        <br>
+        <br>
+        <br>
+        <div>
+            <div class="container">
+                <div class="row">
+                    <div class="footer-item">
+                        <h3>our location</h3>
+                        <p>Shoubra Street, Sector-12,<br> New Delhi - 0000 ****</p>
+                    </div>
+                    <div class="footer-item">
+                        <h3>opening hours</h3>
+                        <p>Monday to Sunday <br> 9:00 AM - 10.00 PM</p>
+                    </div>
+                    <div class="footer-item">
+                        <h3>contact us</h3>
+                        <p>0102 454 4280 ***</p>
+                        <p>info@gmail.com</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fa fa-fw fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-fw fa-instagram"></i></a>
+                            <a href="#"><i class="fa fa-fw fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-fw fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="copyright">
+                        &copy; 2021 - Designed by Abdelrahman
+                    </div>
+                </div>
+            </div>
+        </div>
+        </footer>
+        <script src="main.js"></script>
+    </body>
+</html>
